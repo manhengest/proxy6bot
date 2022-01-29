@@ -2,10 +2,9 @@ const { Telegraf } = require('telegraf')
 const bot = new Telegraf("5209490378:AAHJqn2dXIuLttJmBIyL_GocDmdRp0x1kRU")
 const PROXY6_API_KEY = "3843269ba8-e247985298-f56e06e161"
 const axios = require("axios")
+
 // https://proxy6.net/api/{api_key}/{method}/?{params}
 // https://proxy6.net/api/${PROXY6_API_KEY}/getcount?country=ru&version=4
-
-// ctx.reply("Привет! Введи команду /start чтобы начать отслеживать доступность прокси для Украины на сайте proxy6.net.")
 
 bot.start((ctx) => {
 	ctx.reply("Слежка включена 👀")
